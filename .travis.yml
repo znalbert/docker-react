@@ -6,4 +6,4 @@ before_install:
   - docker build -t znalbert/docker-react -f dev.dockerfile .
 
 script:
-  - docker run znalbert/docker-react npm run test -- --coverage
+  - docker run znalbert/docker-react npm run test:ci -- --coverage
